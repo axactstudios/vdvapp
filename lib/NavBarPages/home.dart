@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
+import 'package:vdvapp/NavBarPages/Recharge.dart';
 
 import '../navDrawer.dart';
 
@@ -183,20 +184,29 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 20,
             ),
-            Card(
-                elevation: 8,
-                color: Colors.deepPurple,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RechargePage(),
+                    ));
+              },
+              child: Card(
+                  elevation: 8,
+                  color: Colors.deepPurple,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10),
+                    ),
                   ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Center(
-                      child: Text('Recharge Now',
-                          style: TextStyle(color: Colors.white))),
-                )),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Center(
+                        child: Text('Recharge Now',
+                            style: TextStyle(color: Colors.white))),
+                  )),
+            ),
             SizedBox(
               height: 20,
             ),

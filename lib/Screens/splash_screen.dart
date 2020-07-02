@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vdvapp/Screens/home_screen.dart';
+import 'package:vdvapp/NavBarPages/home.dart';
 import 'package:vdvapp/Screens/login_screen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
     return MaterialApp(
       routes: <String, WidgetBuilder>{
         '/login': (BuildContext context) => LoginScreen(),
-        '/home': (BuildContext context) => HomeScreen(),
+        '/home': (BuildContext context) => HomePage(),
       },
       home: Splash(),
     );

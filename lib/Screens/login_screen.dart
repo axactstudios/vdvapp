@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vdvapp/Screens/config_screen.dart';
 import 'package:vdvapp/Screens/signUpScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -117,24 +118,33 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(
                         height: height / 30,
                       ),
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: height / 10),
-                        height: height / 22.4,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF573280),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(5),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Config(),
+                              ));
+                        },
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: height / 10),
+                          height: height / 22.4,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF573280),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(5),
+                            ),
                           ),
-                        ),
-                        alignment: Alignment.center,
-                        child: FittedBox(
-                          child: Text(
-                            'Enter',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'k2d',
-                                fontSize: height / 40),
+                          alignment: Alignment.center,
+                          child: FittedBox(
+                            child: Text(
+                              'Enter',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'k2d',
+                                  fontSize: height / 40),
+                            ),
                           ),
                         ),
                       ),

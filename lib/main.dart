@@ -8,6 +8,7 @@ import 'NavBarPages/Recharge.dart';
 import 'NavBarPages/home.dart';
 import 'NavBarPages/EditPack.dart';
 import 'NavBarPages/Service.dart';
+import 'Screens/config_screen.dart';
 import 'Screens/splash_screen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: Config(),
     );
   }
 }
