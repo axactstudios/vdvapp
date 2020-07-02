@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/models/persistent-bottom-nav-bar-styles.widget.dart';
 import 'package:persistent_bottom_nav_bar/models/persistent-nav-bar-scaffold.widget.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.widget.dart';
+import 'package:vdvapp/Screens/login_screen.dart';
 
 import 'NavBar/navBarItems.dart';
 import 'NavBarPages/Recharge.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Config(),
+      home: LoginScreen(),
     );
   }
 }
