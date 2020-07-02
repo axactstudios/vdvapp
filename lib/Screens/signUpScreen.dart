@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:vdvapp/Screens/signUpScreen.dart';
+import 'package:vdvapp/Screens/login_screen.dart';
 
-class LoginScreen extends StatefulWidget {
+class SignUpScreen extends StatefulWidget {
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _SignUpScreenState createState() => _SignUpScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: <Widget>[
                       FittedBox(
                         child: Text(
-                          'Login',
+                          'Sign Up',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: height / 22.4,
@@ -103,17 +103,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                       ),
-                      Container(
-                        width: double.infinity,
-                        alignment: Alignment.centerRight,
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              vertical: 8.0, horizontal: height / 30.8),
-                          child: InkWell(
-                            child: Text('Forgot Password?'),
-                          ),
-                        ),
-                      ),
                       SizedBox(
                         height: height / 30,
                       ),
@@ -143,7 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       FittedBox(
                         child: Text(
-                          'Dont Have an account yet?',
+                          'Already Have an account?',
                           style: TextStyle(fontFamily: 'k2d', fontSize: 16),
                         ),
                       ),
@@ -155,7 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => SignUpScreen(),
+                                builder: (context) => LoginScreen(),
                               ));
                         },
                         child: Container(
@@ -171,7 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           alignment: Alignment.center,
                           child: FittedBox(
                             child: Text(
-                              'Register',
+                              'Sign In',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'k2d',
