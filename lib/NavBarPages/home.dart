@@ -11,6 +11,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      drawer: retNavDrawer(),
+      appBar: AppBar(
+        title: Text('VDV'),
+        backgroundColor: Color(0xFF573280),
+      ),
+    );
   }
 }

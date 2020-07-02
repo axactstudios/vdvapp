@@ -28,7 +28,7 @@ Widget retNavDrawer() {
                   size: 65,
                   backgroundColor: Colors.white,
                   child: Text(
-                    'M',
+                    'V',
                     style: TextStyle(
                         fontSize: 50,
                         color: Colors.black,
@@ -42,7 +42,7 @@ Widget retNavDrawer() {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'MoverZfax',
+                    'VDV',
                     style: TextStyle(
                         fontFamily: 'nunito',
                         color: Colors.white,
@@ -50,7 +50,7 @@ Widget retNavDrawer() {
                         fontSize: 20),
                   ),
                   Text(
-                    'moverZfax@gmail.com',
+                    'support@vdv.com',
                     style: TextStyle(
                         fontFamily: 'nunito',
                         fontSize: 16,
@@ -65,7 +65,7 @@ Widget retNavDrawer() {
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
             child: Text(
-              'Blog',
+              'Recharge Information',
               style: TextStyle(
                   fontSize: 24,
                   fontFamily: 'nunito',
@@ -83,7 +83,7 @@ Widget retNavDrawer() {
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
             child: Text(
-              'Promotional Videos',
+              'Notifications',
               style: TextStyle(
                   fontSize: 24,
                   fontFamily: 'nunito',
@@ -101,7 +101,7 @@ Widget retNavDrawer() {
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
             child: Text(
-              'Video Testimonials',
+              'Contact Us',
               style: TextStyle(
                   fontSize: 24,
                   fontFamily: 'nunito',
@@ -119,7 +119,25 @@ Widget retNavDrawer() {
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
             child: Text(
-              'Feedback',
+              'Change Password',
+              style: TextStyle(
+                  fontSize: 24,
+                  fontFamily: 'nunito',
+                  fontWeight: FontWeight.w600),
+            ),
+          ),
+          onTap: () {},
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          height: 0.5,
+          color: Colors.black26,
+        ),
+        ListTile(
+          title: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
+            child: Text(
+              'Complaints',
               style: TextStyle(
                   fontSize: 24,
                   fontFamily: 'nunito',
