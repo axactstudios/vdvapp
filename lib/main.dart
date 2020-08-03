@@ -9,8 +9,6 @@ import 'NavBarPages/Recharge.dart';
 import 'NavBarPages/home.dart';
 import 'NavBarPages/EditPack.dart';
 import 'NavBarPages/Service.dart';
-import 'Screens/config_screen.dart';
-import 'Screens/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +22,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
